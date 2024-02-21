@@ -45,6 +45,7 @@
 
 % Format major sections (e.g. Education, Professional Experience)
 \newenvironment{Section}[1]{
+    \vspace{5mm} % Increase/decrease this to increase/decrease spacing between sections
 	\MakeUppercase{\textbf{#1}}
         \vspace{2pt}
 	\hrule
