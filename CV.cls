@@ -12,6 +12,9 @@
 \usepackage{adjustbox}
 \usepackage{stackengine}
 \usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{aesupp}
 
 % Page margins
 \geometry{
@@ -36,7 +39,7 @@
 
 % Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
 \newcommand{\header}[7]{
-    {\Huge\MakeUppercase{\textbf{#1}}} \hfill \stackon{#3}{#2}
+    {\Huge\MakeUppercase{\textbf{#1}}} \hfill \stackon{#3}{#2}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
