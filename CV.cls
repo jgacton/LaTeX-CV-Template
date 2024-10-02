@@ -1,5 +1,5 @@
 % Class declaration and passing through args to parent article class
-\ProvidesClass{CV}[26/11/2023 CV Class]
+\ProvidesClass{CV}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax 
 \LoadClass{article} 
