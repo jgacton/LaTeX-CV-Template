@@ -38,8 +38,17 @@
 \makeatother
 
 % Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
+\newcommand{\headerCaps}[7]{
+    {\Huge\MakeUppercase{\textbf{#1}}}\hfill\stackon{#3}{#2}%
+    \vspace{2pt}
+    \hrule
+    \vspace{-4pt}
+    #4#5#6 \hfill #7 \\
+    \vspace{-12pt}
+}
+
 \newcommand{\header}[7]{
-    {\Huge\MakeUppercase{\textbf{#1}}} \hfill \stackon{#3}{#2}%
+    {\Huge\textbf{#1}}\hfill\stackon{#3}{#2}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
@@ -51,14 +60,14 @@
 \newenvironment{Section}[2]{
     \vspace{#2pt} % Increase/decrease this to increase/decrease spacing between sections
 	\MakeUppercase{\textbf{#1}}
-        \vspace{2pt}
+    \vspace{2pt}
 	\hrule
 }{}
 
 % Format individual entries inside sections (e.g. University, Company)
 \newenvironment{Institution}[3]{
     \vspace{#3pt}
-    \textbf{\large#1} \hfill \textbf{#2} \\
+    \textbf{\large#1}\hfill\textbf{#2}\\
 }{
 }
 
@@ -67,7 +76,12 @@
     \textit{#1} \hfill \textit{#2}
     \begin{list}{$\sqcdot$}{\leftmargin=9mm}
 	\setlength{\itemsep}{-0.5em} \vspace{-0.5em}
-        \setlength{\labelsep}{5mm}
+    \setlength{\labelsep}{5mm}
 }{
     \end{list}
+}
+
+\newenvironment{PositionNL}[2]{
+    \textit{#1}\hfill\textit{#2}{\parfillskip=0pt\par}%
+}{
 }
