@@ -8,16 +8,28 @@ The .tex file is where you add your own information. The information currently i
 Use the current state of the file as inspiration. For example, you could change the major sections to include a section detailing your technical projects, or if you have more advanced degrees you will need to add them to the top of the education section. 
 
 ## Some technical considerations: 
-If including multiple positions under one firm (e.g. Associate -> Analyst in descending chronological order), you will need to add a vspace{-5pt} after the bullets for all but the oldest position, otherwise there will be a large whitespace between positions even though they fall under the same company. You can change the exact size of the negative vspace to be whatever you think is most aesthetic, 5pts is a reasonable starting point.
+If including multiple positions under one firm (e.g. Associate -> Analyst in descending chronological order), you will need to add a 
 
-If you do not wish to include a linkedin/github link, remember to delete the \space\textbar\space commands preceding them.
+    \vspace{-5pt} 
+
+after the bullets for all but the oldest position, otherwise there will be a large whitespace between positions even though they fall under the same company. You can change the exact size of the negative vspace to be whatever you think is most aesthetic, 5pts is a reasonable starting point.
+
+If you do not wish to include a linkedin/github link, remember to delete the 
+    
+    \space\textbar\space 
+
+commands preceding them.
 
 The numeric parameter that you pass to the section and institution environments represents the space to be used before that particular section. Modify this as you see fit, for example, reduce it to fit more on the page, or increase it to make the page less cluttered.
 
 Finally, if you want to add a position without any bullet points underneath, for example because the position was years ago or not relevant to your current role or roles you are applying for, you have the 
+    
     \PositionNL
+
 environment which does not require any content in the body of the environment, just the position name, date and spacing. If you want to have your name at the top of the page be capitalised, you have the
+    
     \HeaderCaps
+
 environment.
 
 Have fun!
