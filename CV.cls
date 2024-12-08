@@ -37,9 +37,9 @@
 }
 \makeatother
 
-% Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
+% Header same as below, except name is uppercase 
 \newcommand{\headerCaps}[7]{
-    {\Huge\MakeUppercase{\textbf{#1}}}\hfill\stackon{#3}{#2}%
+    {\Huge\MakeUppercase{\textbf{#1}}}\hfill \stackengine{\stackgap}{#3}{#2}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
@@ -47,6 +47,7 @@
     \vspace{-12pt}
 }
 
+% Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
 \newcommand{\header}[7]{
     {\Huge\textbf{#1}}\hfill\stackon{#3}{#2}%
     \vspace{2pt}
@@ -81,6 +82,7 @@
     \end{list}
 }
 
+% Same as above for positions/roles but without bullet points
 \newenvironment{PositionNL}[2]{
     \textit{#1}\hfill\textit{#2}{\parfillskip=0pt\par}%
 }{
