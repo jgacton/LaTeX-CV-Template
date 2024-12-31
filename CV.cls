@@ -15,6 +15,11 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{aesupp}
+\usepackage{censor}
+
+% Redaction bar height and depth
+\censorruledepth=-0.3ex
+\censorruleheight=2.0ex
 
 % Page margins
 \geometry{
@@ -39,21 +44,21 @@
 
 % Header same as below, except name is uppercase 
 \newcommand{\headerCaps}[7]{
-    {\Huge\MakeUppercase{\textbf{#1}}}\hfill \stackengine{\stackgap}{#3}{#2}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
+    {\Huge\MakeUppercase{\textbf{\xblackout{#1}}}}\hfill \stackengine{\stackgap}{\xblackout{#3}}{\xblackout{#2}}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
-    #4#5#6 \hfill #7 \\
+    \xblackout{#4#5#6} \hfill \xblackout{#7} \\
     \vspace{-12pt}
 }
 
 % Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
 \newcommand{\header}[7]{
-    {\Huge\textbf{#1}}\hfill\stackon{#3}{#2}%
+    {\Huge\textbf{\xblackout{#1}}}\hfill\stackon{\xblackout{#3}}{\xblackout{#2}}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
-    #4#5#6 \hfill #7 \\
+    \xblackout{#4#5#6} \hfill \xblackout{#7} \\
     \vspace{-12pt}
 }
 
@@ -68,7 +73,7 @@
 % Format individual entries inside sections (e.g. University, Company)
 \newenvironment{Institution}[3]{
     \vspace{#3pt}
-    \textbf{\large#1}\hfill\textbf{#2}\\
+    \textbf{\large\xblackout{#1}}\hfill\textbf{\xblackout{#2}}\\
 }{
 }
 
