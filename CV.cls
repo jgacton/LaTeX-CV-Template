@@ -54,7 +54,7 @@
 
 % Format header (1=name, 2=firstlineaddress, 3=secondlineaddress, 4=emailaddress, 5=githublink, 6=linkedinlink, 7=mobilenumber 
 \newcommand{\header}[7]{
-    {\Huge\textbf{\xblackout{#1}}}\hfill\stackon{\xblackout{#3}}{\xblackout{#2}}%
+    {\Huge\textbf{\xblackout{#1}}}\hfill \stackengine{\stackgap}{\xblackout{#3}}{\xblackout{#2}}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
     \vspace{2pt}
     \hrule
     \vspace{-4pt}
