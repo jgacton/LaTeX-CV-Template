@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  6 FEB 2025 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  6 FEB 2025 12:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,13 +343,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Here is how much of TeX's memory you used:
  5614 strings out of 476025
  91325 string characters out of 5790017
- 1864388 words of memory out of 5000000
+ 1863388 words of memory out of 5000000
  25946 multiletter control sequences out of 15000+600000
  547557 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,9n,76p,615b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/aesupp/aemri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Example.pdf (1 page, 144518 bytes).
+Output written on Example.pdf (1 page, 144373 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
